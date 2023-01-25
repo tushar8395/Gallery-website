@@ -1,0 +1,277 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#action-bar {
+    background-color: teal;
+    height: 8vh;
+    display: flex;
+}
+
+#action-bar * {
+    border: 3px solid white;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#action-bar span:hover {
+    background-color: white;
+}
+
+#action-bar select {
+    background-color: cyan;
+}
+
+#action-bar select option {
+    margin: 10px;
+    border-bottom: 2px solid teal;
+}
+
+#content {
+    height: 92vh;
+    display: flex;
+}
+
+
+#content-list {
+    
+    width: 15vw;
+    padding: 5px;
+}
+
+#content-details {
+    border-left: 5px solid rgb(110, 110, 230);
+    width: 85vw;
+}
+#content-details-overlay{
+    display: none;
+    position: fixed;
+    height: 92vh;
+    width: 100vw;
+    top:8vh;
+    left:15vw;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay {
+    
+    position: fixed;
+    height: 92vh;
+    width: 100vw;
+    top:8vh;
+    left:0%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    width: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+    /* vertically aligning text within div*/
+    line-height: 100px;
+    vertical-align:middle;
+
+    text-align: center; /*horizontally align text within this div*/
+    text-decoration: underline;
+}
+
+#new-slide {
+    background-color: teal;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+    margin: 5px;
+}
+
+#new-slide:hover {
+    transform: scale(1.02);
+}
+
+#slide-list{
+    height: calc(92vh - 120px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#create-Slide{
+    display: none;
+}
+#show-Slide{
+    display: none;
+}
+#create-slide{
+    display: none;
+  
+    padding:10px;
+    text-align: center;
+
+    
+  
+}
+#create-slide div{
+    margin: 5px;
+    padding: 10;
+    
+}
+
+#create-Slide textarea{
+    width: 90%;
+    height: 53vh;
+    font-size: larger
+} 
+#create-slide input{
+    width :70%;
+    height:5vh;
+    font-size: larger;
+}
+#create-slide button{
+    padding: 20px;
+    border-radius: 4px;;
+    cursor: pointer;
+    background-color: rgb(137, 219, 206);
+
+}
+
+#create-slide button:hover{
+    transform: scale(1.2);
+}
+
+.slide{
+    background-color: teal;
+    border-radius: 5px;
+    
+  height: 100px;
+  width: 100%;
+
+
+    color: white;
+    font-weight: 900;
+    margin: 5px;
+    padding:5px;
+    
+}
+
+.slide .title{
+    height:20%;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+.slide .slide-content{
+    height:80%;
+    width:95%;
+    display: flex;
+    padding-bottom: 3px;
+;
+}
+.slide .slide-content .desc{
+    background-color: cadetblue;
+    height:100%;
+    width:50%;
+    font-size: 10px;
+    overflow: hidden;
+    margin: 3px;
+    border-radius: 3px;
+    
+}
+.slide .slide-content img{
+    border-radius: 5px;
+    height:100%;
+    width:50%;
+    margin-top: 3px;
+
+}
+
+.slide-in-view{
+    background-color: teal;
+    border-radius: 5px;
+    height: 98%;
+    width: 98%;
+    color: white;
+    font-weight: 900;
+    margin: 5px;
+    
+    
+}
+.slide-in-view .slide-header {
+    height:10%;
+    border-bottom: 2px solid white;
+    display: flex;
+    padding:3px;
+}
+.slide-in-view .slide-header span{
+    margin-top: 10px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    margin-left: 4px;
+    margin-right:5px;
+    background-color: rgb(30, 160, 138);
+}
+.slide-in-view .slide-header span:hover{
+    cursor: pointer;
+    transform:scale(1.3);
+    background-color: black;
+    text-decoration: underline;
+}
+
+.slide-in-view .title{
+    width:98%;
+    text-align: center;
+    font-size: 40px;
+}
+.slide-in-view .title:hover{
+    text-decoration: underline;
+    
+}
+.slide-in-view .slide-content{
+    height:90%;
+    width:98%;
+    display: flex;
+    padding-bottom: 3px;
+    margin:5px;
+
+}
+ .slide-in-view .slide-content .desc{
+    background-color: cadetblue;
+    height:98%;
+    width:35%;
+    font-size: 20px;
+    overflow-y:auto ;
+    margin: 3px;
+    border-radius: 3px;
+    margin:5px;
+    
+} 
+.slide-in-view .slide-content img{
+    border-radius: 10px;
+    height:100%;
+    width: 65%;
+    margin-top: 5px;
+    
+
+
+}
+
+#uploadFile{
+    display: none;
+}
